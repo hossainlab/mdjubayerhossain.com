@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -10,7 +10,7 @@ import PublicationsPage from './pages/PublicationsPage';
 import TeachingPage from './pages/TeachingPage';
 import EntrepreneurshipPage from './pages/EntrepreneurshipPage';
 import NewsletterPage from './pages/NewsletterPage';
-import NewsPage from './pages/NewsPage';
+import PressPage from './pages/PressPage';
 import CVPage from './pages/CVPage';
 import ContactPage from './pages/ContactPage';
 import { useDarkMode } from './hooks/useDarkMode';
@@ -43,7 +43,8 @@ function App() {
             <Route path="/teaching" element={<TeachingPage />} />
             <Route path="/entrepreneurship" element={<EntrepreneurshipPage />} />
             <Route path="/newsletter" element={<NewsletterPage />} />
-            <Route path="/news" element={<NewsPage />} />
+            <Route path="/press" element={<PressPage />} />
+            <Route path="/news" element={<Navigate to="/press" replace />} />
             <Route path="/cv" element={<CVPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>

@@ -534,26 +534,95 @@ export const coursesData: Course[] = [
 export const pressFeaturesData: PressFeature[] = [
   {
     id: 1,
-    outletName: 'TechCrunch',
-    outletLogoUrl: 'https://picsum.photos/seed/techcrunchlogo/400/200',
-    headline: "BioAI startup GenoPredict AI raises $20M to bring genomic prediction to the clinic",
-    date: "July 15, 2023",
-    link: "#"
+    outletName: 'The Daily Star',
+    outletLogoUrl: 'https://picsum.photos/seed/dailystar/400/200',
+    headline: "Young Bangladeshi Researcher Leading AI Revolution in Global Health",
+    date: "November 15, 2024",
+    link: "#",
+    type: 'Feature Story',
+    featured: true
   },
   {
     id: 2,
-    outletName: 'Nature Methods',
-    outletLogoUrl: 'https://picsum.photos/seed/naturelogo/400/200',
-    headline: "The algorithm that's changing how we see single cells: An interview with Dr. Alex Chen",
-    date: "May 02, 2023",
-    link: "#"
+    outletName: 'Dhaka Tribune',
+    outletLogoUrl: 'https://picsum.photos/seed/dhakatribune/400/200',
+    headline: "From Data to Innovation: How Bioinformatics is Transforming Healthcare in Bangladesh",
+    date: "October 8, 2024",
+    link: "#",
+    type: 'Interview',
+    featured: true
   },
   {
     id: 3,
-    outletName: 'WIRED',
-    outletLogoUrl: 'https://picsum.photos/seed/wiredlogo/400/200',
-    headline: "Can AI dream up new medicines? These scientists think so.",
-    date: "January 20, 2023",
-    link: "#"
+    outletName: 'Bangladesh Pratidin',
+    outletLogoUrl: 'https://picsum.photos/seed/bdpratidin/400/200',
+    headline: "DeepBio Limited: Pioneering AI-Driven Solutions for Personalized Medicine",
+    date: "September 22, 2024",
+    link: "#",
+    type: 'Business Profile',
+    featured: true
+  },
+  {
+    id: 4,
+    outletName: 'New Age',
+    outletLogoUrl: 'https://picsum.photos/seed/newage/400/200',
+    headline: "CHIRAL Bangladesh: Building the Future of Computational Biology Education",
+    date: "August 30, 2024",
+    link: "#",
+    type: 'Education Feature'
+  },
+  {
+    id: 5,
+    outletName: 'The Business Standard',
+    outletLogoUrl: 'https://picsum.photos/seed/tbsnews/400/200',
+    headline: "Tech Entrepreneur Bridges Gap Between Academic Research and Industry Innovation",
+    date: "July 18, 2024",
+    link: "#",
+    type: 'Entrepreneur Spotlight'
+  },
+  {
+    id: 6,
+    outletName: 'United News of Bangladesh',
+    outletLogoUrl: 'https://picsum.photos/seed/unb/400/200',
+    headline: "AI and Machine Learning Applications in Drug Discovery: Bangladesh Perspective",
+    date: "June 25, 2024",
+    link: "#",
+    type: 'Research Coverage'
+  },
+  {
+    id: 7,
+    outletName: 'Prothom Alo',
+    outletLogoUrl: 'https://picsum.photos/seed/prothomalo/400/200',
+    headline: "Digital Health Revolution: How Young Researchers are Changing Healthcare",
+    date: "May 12, 2024",
+    link: "#",
+    type: 'Feature Story'
+  },
+  {
+    id: 8,
+    outletName: 'The Independent',
+    outletLogoUrl: 'https://picsum.photos/seed/independent/400/200',
+    headline: "Training the Next Generation: Innovative Approaches to Bioinformatics Education",
+    date: "April 5, 2024",
+    link: "#",
+    type: 'Education Feature'
+  },
+  {
+    id: 9,
+    outletName: 'Financial Express',
+    outletLogoUrl: 'https://picsum.photos/seed/financialexpress/400/200',
+    headline: "Startup Success: How DeepBio is Making Waves in the Biotech Industry",
+    date: "March 20, 2024",
+    link: "#",
+    type: 'Startup Feature'
+  },
+  {
+    id: 10,
+    outletName: 'bdnews24.com',
+    outletLogoUrl: 'https://picsum.photos/seed/bdnews24/400/200',
+    headline: "Research Excellence: Publications That are Shaping Global Health Policy",
+    date: "February 14, 2024",
+    link: "#",
+    type: 'Research Achievement'
   }
 ];

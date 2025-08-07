@@ -44,4 +44,6 @@ export interface PressFeature {
     headline: string;
     date: string;
     link: string;
+    type?: string;
+    featured?: boolean;
 }

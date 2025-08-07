@@ -239,6 +239,62 @@ html {
   }
 }
 
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+  /* Mobile-first adjustments */
+  .hero-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Reduce animations on mobile for performance */
+  .animate-float,
+  .animate-bounce,
+  .animate-pulse,
+  .animate-spin {
+    animation-duration: 2s;
+  }
+  
+  /* Better text scaling */
+  h1 {
+    line-height: 1.2;
+  }
+  
+  h2 {
+    line-height: 1.3;
+  }
+  
+  /* Mobile grid improvements */
+  .mobile-grid-fix {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tablet-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hero-container {
+    max-width: 1600px;
+  }
+}
+
 /* Focus improvements for accessibility */
 @media (prefers-reduced-motion: no-preference) {
   .focus-smooth:focus {
