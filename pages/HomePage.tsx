@@ -5,6 +5,7 @@ import { publicationsData, researchProjectsData, coursesData } from '../data/moc
 import { Publication, ResearchProject, Course } from '../types';
 import { IconExternalLink, IconGithub } from '../components/Icons';
 import { useScrollAnimation, useScrollToTop } from '../hooks/useScrollAnimation';
+import YouTubeStatsComponent from '../components/YouTubeStats';
 
 const PublicationCard: React.FC<{ publication: Publication }> = ({ publication }) => (
   <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-600 hover:-translate-y-1 transition-all duration-300 overflow-hidden group">
@@ -83,6 +84,7 @@ const HomePage: React.FC = () => {
   const researchAnimation = useScrollAnimation({ threshold: 0.15 });
   const publicationsAnimation = useScrollAnimation({ threshold: 0.15 });
   const teachingAnimation = useScrollAnimation({ threshold: 0.15 });
+  const youtubeAnimation = useScrollAnimation({ threshold: 0.15 });
   const entrepreneurshipAnimation = useScrollAnimation({ threshold: 0.15 });
   const contactAnimation = useScrollAnimation({ threshold: 0.15 });
   
@@ -268,6 +270,28 @@ const HomePage: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* YouTube Section */}
+      <section 
+        id="youtube" 
+        ref={youtubeAnimation.ref}
+        className={`py-16 sm:py-20 bg-white dark:bg-gray-900 scroll-animate scroll-margin-top ${youtubeAnimation.isVisible ? 'animate' : ''}`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Educational Content
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Sharing knowledge through YouTube videos on bioinformatics, AI, and data science
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <YouTubeStatsComponent apiKey="AIzaSyAq8YfYF-Mo1VUl-XIK0BtaZuTp8u8vicU" />
           </div>
         </div>
       </section>
