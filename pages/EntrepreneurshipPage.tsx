@@ -129,7 +129,6 @@ const EntrepreneurshipPage: React.FC = () => {
   return (
     <Section 
       title="Entrepreneurship" 
-      subtitle="Translating cutting-edge research into innovative solutions that transform healthcare and biotechnology."
     >
       <div className="max-w-7xl mx-auto">
         {/* Introduction */}
