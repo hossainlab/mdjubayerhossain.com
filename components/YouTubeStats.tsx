@@ -13,7 +13,7 @@ interface YouTubeStatsProps {
 
 const YouTubeStatsComponent: React.FC<YouTubeStatsProps> = ({ 
   channelId = "@hossainlab", // @hossainlab channel handle
-  apiKey 
+  apiKey = import.meta.env.VITE_YOUTUBE_API_KEY
 }) => {
   const [stats, setStats] = useState<YouTubeStats | null>(null);
   const [loading, setLoading] = useState(true);
